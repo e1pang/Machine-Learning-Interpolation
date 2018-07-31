@@ -18,6 +18,6 @@ http://miro.enev.us/docs/mouse_ID.pdf
 
 http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0177851#authcontrib
 
-http://www.ieeeconfpublishing.org/cpir/UploadedFiles/paper%20.pdf
+http://www.ieeeconfpublishing.org/cpir/UploadedFiles/paper%20(1).pdf
 
 https://en.wikipedia.org/wiki/Fitts%27s_law
