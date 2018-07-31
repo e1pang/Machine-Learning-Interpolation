@@ -27,16 +27,18 @@ In generateData.py are some of the functions used to generate the data sets. I s
 ## Resources
 The LSTM code and guide to using an encoder/decoder was taken from here:
 
-https://blog.keras.io/a-ten-minute-introduction-to-sequence-to-sequence-learning-in-keras.html
+[A ten-minute introduction to sequence-to-sequence learning in Keras](https://blog.keras.io/a-ten-minute-introduction-to-sequence-to-sequence-learning-in-keras.html)
 
-https://machinelearningmastery.com/develop-encoder-decoder-model-sequence-sequence-prediction-keras/
+[How to Develop an Encoder-Decoder Model for Sequence-to-Sequence Prediction in Keras](https://machinelearningmastery.com/develop-encoder-decoder-model-sequence-sequence-prediction-keras/)
 
-Other interesting and possibly unrelated resources:
+Further Reading that is unrelated to the code:
 
-http://miro.enev.us/docs/mouse_ID.pdf
+[Identifying Game Players with Mouse Biometrics](http://miro.enev.us/docs/mouse_ID.pdf)
 
-http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0177851#authcontrib
+[The detection of faked identity using unexpected questions and mouse dynamics](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0177851#authcontrib)
 
-http://www.ieeeconfpublishing.org/cpir/UploadedFiles/paper%20(1).pdf
+[Predicting User Intention from Mouse Interaction](http://www.ieeeconfpublishing.org/cpir/UploadedFiles/paper%20(1).pdf)
 
-https://en.wikipedia.org/wiki/Fitts%27s_law
+[INVERSE BIOMETRICS FOR MOUSE DYNAMICS](https://www.isot.ece.uvic.ca/publications/behavioral-biometricsx/IJPRAI2203_P461.pdf)
+
+[Fitt's Law](https://en.wikipedia.org/wiki/Fitts%27s_law)
