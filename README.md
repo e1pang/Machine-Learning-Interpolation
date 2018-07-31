@@ -1,7 +1,7 @@
 # Machine-Learning-Interpolation
 
 
-##Motivation
+## Motivation
 I was wondering if ML could be used to generate a path for mouse movement if the start and endpoints are given. I do not have data for mouse movement, so instead I tried to use ML to generate curves/sequences given the beginning and end of the sequence.
 
 In generateData.py are some of the functions used to generate the data sets. I started with simple sets and moved towards more complicated sets. The other 3 files are ready to be run with the bezier curve as the curve to be predicted. 
