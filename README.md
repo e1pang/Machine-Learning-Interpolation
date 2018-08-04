@@ -14,11 +14,12 @@ In generateData.py are some of the functions used to generate the data sets. I s
   - On the other hand, for data sets that are truly sequences, the Dense network failed and the LSTM worked. See: get_sequence function in generate.py
 
 ## What I learned
-- Padding works for categorical data, but it does not work with for continuous data. 
+- Categorical versus continuous 
+  - Padding works for categorical data, but it does not work with for continuous data. 
 
-- An end marker improves results for categorical data, is meaningless for continuous data. 
+  - An end marker improves results for categorical data, is meaningless for continuous data. 
 
-  - In hindsight, this makes sense considering the meaning of categorical versus continuous data. 
+    - In hindsight, the observed results on padding and end marker makes sense considering the meaning of categorical versus continuous data. 
   
 - Having too few nodes/layers results in the model being unable to capture all of the data (underfitting), whereas having too many nodes/layers can lead to dead nodes through backpropagation and/or overfitting (references: 1) [Dying node](https://www.quora.com/What-is-the-dying-ReLU-problem-in-neural-networks) 2) [More layers versus more nodes](https://stats.stackexchange.com/questions/222883/why-are-neural-networks-becoming-deeper-but-not-wider)).
 
