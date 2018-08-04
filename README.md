@@ -10,7 +10,7 @@ In generateData.py are some of the functions used to generate the data sets. I s
 ## What I did
 - First I used a dense neural network.  For modelig the Bezier curve, it was simple and worked extremely well (when plotting the results, the model prediction overlaps with the training data). See: nn3_interp2D.py
 
-- I then interpreted the problem as generating a sequence from start to end. This meant using LSTM encoder/decoder. For modeling the Bezier curve, it was more complicated, and did not work as well. See: LSTM_interp2D_x_y_sep.py , LSTM_interp2D_xyxy_mixed.py
+- I then interpreted the problem as generating a sequence from input = [start,end] to output = [start, p1, p2...p_n-1, end] (seq2seq). This meant using LSTM encoder/decoder. For modeling the Bezier curve, it was more complicated, and did not work as well. See: LSTM_interp2D_x_y_sep.py , LSTM_interp2D_xyxy_mixed.py
   - On the other hand, for data sets that are truly sequences, the Dense network failed and the LSTM worked. See: get_sequence function in generate.py
 
 ## What I learned
@@ -20,9 +20,9 @@ In generateData.py are some of the functions used to generate the data sets. I s
 
   - In hindsight, this makes sense considering the meaning of categorical versus continuous data. 
   
-- Having too few nodes/layers results in the model being unable to capture all of the data, whereas having too many nodes/layers can lead to dead nodes in output.
+- Having too few nodes/layers results in the model being unable to capture all of the data (underfitting), whereas having too many nodes/layers can lead to dead nodes through backpropagation and/or overfitting (references: 1) [Dying node](https://www.quora.com/What-is-the-dying-ReLU-problem-in-neural-networks) 2) [More layers versus more nodes](https://stats.stackexchange.com/questions/222883/why-are-neural-networks-becoming-deeper-but-not-wider)).
 
-- During training, luck is a factor. Sometimes the training gets stuck and is unable to improve on its loss, so the training has to be restarted.
+- During training, luck with weight initialization is a factor. Sometimes the training gets stuck and is unable to improve on its loss, so the training has to be restarted.
 
 ## Resources
 The LSTM code and guide to using an encoder/decoder was taken from here:
@@ -31,7 +31,7 @@ The LSTM code and guide to using an encoder/decoder was taken from here:
 
 [How to Develop an Encoder-Decoder Model for Sequence-to-Sequence Prediction in Keras](https://machinelearningmastery.com/develop-encoder-decoder-model-sequence-sequence-prediction-keras/)
 
-Further Reading that is unrelated to the code:
+Further Reading that is unrelated to the code and more about my interest in mimicing human cursor movement:
 
 [Identifying Game Players with Mouse Biometrics](http://miro.enev.us/docs/mouse_ID.pdf)
 
