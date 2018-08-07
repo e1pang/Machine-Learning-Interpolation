@@ -21,7 +21,8 @@ In generateData.py are some of the functions used to generate the data sets. I s
 
     - In hindsight, the observed results on padding and end marker makes sense considering the meaning of categorical versus continuous data. 
   
-- Having too few nodes/layers results in the model being unable to capture all of the data (underfitting), whereas having too many nodes/layers can lead to dead nodes through backpropagation and/or overfitting (references: 1) [Dying node](https://www.quora.com/What-is-the-dying-ReLU-problem-in-neural-networks) 2) [More layers versus more nodes](https://stats.stackexchange.com/questions/222883/why-are-neural-networks-becoming-deeper-but-not-wider)).
+- Having too few nodes/layers results in the model being unable to capture all of the data (underfitting), whereas having too many can lead to overfitting, with the additional problem of dead nodes from backpropagation (references: 1) [More layers versus more nodes](https://stats.stackexchange.com/questions/222883/why-are-neural-networks-becoming-deeper-but-not-wider) 2) [Dying node](https://www.quora.com/What-is-the-dying-ReLU-problem-in-neural-networks)).
+
 
 - During training, luck with weight initialization is a factor. Sometimes the training gets stuck and is unable to improve on its loss, so the training has to be restarted.
 
